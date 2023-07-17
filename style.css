@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(192, 255, 250);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 20%;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:0px  8px 16px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+.container form{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.display-result {
+    width: 100%;
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    left:-100%;
+    transition: left .5s ease;
+
+}
+
+
+.display-result span{
+    font-weight: 400px;
+    font-size: 16px;
+    color:white;
+    width: 100%;
+
+}
+
+
+.input-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:4px;
+}
+
+
+.first{
+    margin-top: 70px;
+}
+.input-group label{
+    width: 100%;
+    font-size: 12px;
+    color:darkcyan;
+    font-weight: bold;
+
+}
+
+.input-group input, .btn-solve{
+    width: 100%;
+    padding: 10px;
+    border:1px solid darkcyan;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+.input-group input.error{
+    border:1px solid red;
+}
+
+.btn-solve{
+    background-color: darkcyan;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.btn-solve:hover{
+background-color: #333;
+border: 1px solid #333;
+}
+
